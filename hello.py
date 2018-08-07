@@ -191,10 +191,10 @@ def whatsappAnalysis():
 @app.route('/datacoming_twitter', methods=['POST'])
 def data_twitter():
     try:
-        CONSUMER_KEY    = '8m03jCyx1airOSy7z2hsNWNx8'
-        CONSUMER_SECRET = 'o9rD2NcdO63Vkap4oilNdCBW9akFJXY7ycli9z3kDkVhlSFbwX'
-        ACCESS_TOKEN  = '2973697400-lf7KVcM2Bhr2TahpVYA4If0Z8Pl8VHVcXQ3fBaP'
-        ACCESS_SECRET = '8puvaOrXHNUkfmznTrJbHHtjCnYyykjlOicMlYmdyxq3J'
+        CONSUMER_KEY    = '--'
+        CONSUMER_SECRET = '--'
+        ACCESS_TOKEN  = '--'
+        ACCESS_SECRET = '--'
         def twitter_setup():
             auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
             auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
@@ -335,7 +335,7 @@ def cancerPredict():
     #print(train_target)
 
     #print(age,gender,air,alch,dust,occp,gene,ldesc,diet,obsty,smoke,psmoke,chest,cough,fatig,weight,breath,wheez,swallow,nails,cold,dcough,snore)
-    return render_template("cancer.html",predicted=predicted,predicted1=predicted1,predicted2=predicted2)
+    #return render_template("cancer.html",predicted=predicted,predicted1=predicted1,predicted2=predicted2)
 
 
 if __name__ == '__main__':
